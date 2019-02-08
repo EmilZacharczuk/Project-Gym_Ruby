@@ -14,7 +14,7 @@ CREATE TABLE sessions (
   title VARCHAR(225),
   instructor VARCHAR(225),
   day VARCHAR(225),
-  start_time TIMESTAMP
+  start_time VARCHAR(225)
 );
 
 CREATE TABLE bookings (
