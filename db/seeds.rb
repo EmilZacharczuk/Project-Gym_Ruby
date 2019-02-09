@@ -100,5 +100,10 @@ session_6 = Session.new(
 
 session_6.save()
 
+booking_1 = Booking.new(
+    {"member_id" => member_1.id,
+     "session_id" => session_2.id
+   })
+booking_1.save()
 binding.pry
 nil
