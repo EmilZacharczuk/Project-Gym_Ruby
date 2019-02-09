@@ -5,7 +5,7 @@ DROP TABLE members;
 CREATE TABLE members (
   id SERIAL4 PRIMARY KEY,
   first_name VARCHAR(225),
-  last_name VARCHAR(225),
+  second_name VARCHAR(225),
   address VARCHAR(225)
 );
 
