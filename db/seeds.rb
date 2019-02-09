@@ -37,5 +37,7 @@ member_2.save()
 member_3.save()
 member_4.save()
 member_5.save()
+member_1.first_name = 'Jack'
+member_1.update()
 binding.pry
 nil
