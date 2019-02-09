@@ -4,6 +4,7 @@ require_relative('../models/booking')
 require("pry-byebug")
 
 Member.delete_all
+Session.delete_all
 
 member_1 = Member.new(
   {"first_name" => "John",
@@ -45,7 +46,59 @@ member_5 = Member.new(
 
 member_5.save()
 
+session_1 = Session.new(
+    {"title" => 'Yoga',
+     "instructor" => "Jerry Maison",
+     "day" => "Monday",
+     "start_time" => "07:00"
+     })
 
+session_1.save()
+
+session_2 = Session.new(
+    {"title" => 'Spin',
+     "instructor" => "Jack Henderson",
+     "day" => "Tuesday",
+     "start_time" => "06:30"
+     })
+
+session_2.save()
+
+session_3 = Session.new(
+    {"title" => 'Body Pump',
+     "instructor" => "Anne McDowell",
+     "day" => "Monday",
+     "start_time" => "13:00"
+     })
+
+session_3.save()
+
+session_4 = Session.new(
+    {"title" => 'Kick Boxing',
+     "instructor" => "Frank Richards",
+     "day" => "Wednesday",
+     "start_time" => "18:30"
+     })
+
+session_4.save()
+
+session_5 = Session.new(
+    {"title" => 'Cardion Street Funk',
+     "instructor" => "Joel King",
+     "day" => "Thursday",
+     "start_time" => "21:00"
+     })
+
+session_5.save()
+
+session_6 = Session.new(
+    {"title" => 'ABS Turbo',
+     "instructor" => "Marry Erwin",
+     "day" => "Friday",
+     "start_time" => "07:30"
+     })
+
+session_6.save()
 
 binding.pry
 nil
