@@ -135,5 +135,6 @@ booking_5 = Booking.new(
 
 booking_5.save()
 
+
 binding.pry
 nil
