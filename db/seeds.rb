@@ -5,6 +5,7 @@ require("pry-byebug")
 
 Member.delete_all
 Session.delete_all
+Booking.delete_all
 
 member_1 = Member.new(
   {"first_name" => "John",
@@ -102,8 +103,37 @@ session_6.save()
 
 booking_1 = Booking.new(
     {"member_id" => member_1.id,
-     "session_id" => session_2.id
+     "session_id" => session_1.id
    })
 booking_1.save()
+
+booking_2 = Booking.new(
+    {"member_id" => member_2.id,
+     "session_id" => session_2.id
+   })
+
+booking_2.save()
+
+booking_3 = Booking.new(
+    {"member_id" => member_3.id,
+     "session_id" => session_3.id
+   })
+
+booking_3.save()
+
+booking_4 = Booking.new(
+    {"member_id" => member_4.id,
+     "session_id" => session_4.id
+   })
+
+booking_4.save()
+
+booking_5 = Booking.new(
+    {"member_id" => member_5.id,
+     "session_id" => session_5.id
+   })
+
+booking_5.save()
+
 binding.pry
 nil
