@@ -1,0 +1,9 @@
+<h1><%= @session.title %> </h1>
+
+<h3> Is attended by:</h3>
+
+<ul>
+  <% @session.members.each do |member| %>
+    <li> <%=member.pretty_name%> </li>
+  <% end %>
+</ul>
