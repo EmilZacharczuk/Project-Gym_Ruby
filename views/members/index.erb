@@ -5,6 +5,10 @@
     <th>Name</th>
     <th>|<th>
     <th>Address</th>
+    <th>|</th>
+    <th>Edit</th>
+    <th>|</th>
+    <th>Remove</th>
 
   </tr>
   <% for member in @members %>
@@ -12,6 +16,10 @@
     <td><a href="members/<%= member.id %>"><%= member.pretty_name %></a></td>
     <td></td>
     <td><%= member.address %></td>
+    <td></td>
+    <td><a href="members/<%= member.id %>/edit">Edit</a></td>
+    <td></td>
+    <td><a href="members/<% member.id %>/delete">Delete</a></td>
   </tr>
   <% end %>
 </table>
