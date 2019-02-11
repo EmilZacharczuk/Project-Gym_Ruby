@@ -12,12 +12,27 @@ get '/members/new' do
   erb (:"members/new")
 end
 
+post '/members' do
+  Member.new(params).save
+  redirect to '/members'
+end
+
 get '/members/:id' do
   @member = Member.find(params['id'].to_i)
   erb (:"members/show")
 end
 
-post '/members' do
-  Member.new(params).save
-  redirect to '/members'
+get '/members/:id/edit' do
+  @member = Member.find(params['id'].to_i)
+  erb (:"members/edit")
+end
+
+post '/members/:id' do
+  # @member = Member.find(params['id'].to_i)
+  # @member.name = params['first_name']
+  # @member.update()
+  # redirect '/members'
+  member = Member.new(params)
+  member.update
+  redirect to "/members"
 end

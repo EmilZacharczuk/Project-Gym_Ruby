@@ -1,0 +1,21 @@
+<h2>Update details of <%= @member.pretty_name %></h2>
+<form method="POST" action="/members/<%=@member.id%>"/>
+  <div>
+    <label for="first_name">First Name:</label>
+    <input type="text" name="first_name" id="first_name" value= "<%=@member.first_name %>"/>
+  </div>
+
+  <div>
+    <label for="second_name">Second Name:</label>
+    <input type="text" name="second_name" id="second_name" value= "<%=@member.second_name %>"/>
+  </div>
+
+  <div>
+    <label for="address">Address:</label>
+    <input type="text" name="address" id="address" value="<%=@member.address %>"/>
+  </div>
+
+  <div>
+    <input type="submit" value="Update details"/>
+  </div>
+</form>
