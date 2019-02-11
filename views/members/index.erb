@@ -3,13 +3,14 @@
 <table>
   <tr>
     <th>Name</th>
-    <th>/<th>
+    <th>|<th>
     <th>Address</th>
 
   </tr>
   <% for member in @members %>
   <tr>
     <td><a href="members/<%= member.id %>"><%= member.pretty_name %></a></td>
+    <td></td>
     <td><%= member.address %></td>
   </tr>
   <% end %>
