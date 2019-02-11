@@ -9,6 +9,10 @@
     <th>Day</th>
     <th>|</th>
     <th>Start Time</th>
+    <th>|</th>
+    <th>Edit</th>
+    <th>|</th>
+    <th>Remove</th>
   </tr>
   <% for session in @sessions %>
   <tr>
@@ -19,6 +23,10 @@
     <td><%= session.day %></td>
     <td></td>
     <td><%= session.start_time %></td>
+    <td></td>
+    <td><a href="sessions/<%= session.id %>/edit">Edit</a></td>
+    <td></td>
+    <td><a href="sessions/<%= session.id %>/delete">Delete</a></td>
   </tr>
   <% end %>
 </table>
