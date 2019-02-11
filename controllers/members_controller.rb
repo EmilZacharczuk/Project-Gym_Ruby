@@ -28,10 +28,6 @@ get '/members/:id/edit' do
 end
 
 post '/members/:id' do
-  # @member = Member.find(params['id'].to_i)
-  # @member.name = params['first_name']
-  # @member.update()
-  # redirect '/members'
   member = Member.new(params)
   member.update
   redirect to "/members"

@@ -12,12 +12,23 @@ get '/sessions/new' do
   erb (:"sessions/new")
 end
 
+post '/sessions' do
+  Session.new(params).save
+  redirect to '/sessions'
+end
+
 get '/sessions/:id' do
   @session = Session.find(params['id'].to_i)
   erb (:"sessions/show")
 end
 
-post '/sessions' do
-  Session.new(params).save
+get '/sessions/:id/edit' do
+  @session = Session.find(params['id'].to_i)
+  erb (:"sessions/edit")
+end
+
+post '/sessions/:id' do
+  session = Session.new(params)
+  session.update
   redirect to '/sessions'
 end
