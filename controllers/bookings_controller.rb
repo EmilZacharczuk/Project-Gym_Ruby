@@ -20,3 +20,9 @@ post '/bookings' do
   Booking.new(params).save
   redirect '/bookings'
 end
+
+post '/bookings/:id/delete' do
+  booking = Booking.find(params['id'].to_i)
+  booking.delete
+  redirect to '/bookings'
+end
