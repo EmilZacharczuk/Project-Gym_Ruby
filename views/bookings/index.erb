@@ -1,0 +1,16 @@
+<h1>Bookings</h1>
+
+<table>
+  <tr>
+    <th>Member</th>
+    <th>|<th>
+    <th>Class</th>
+  </tr>
+  <% for booking in @bookings %>
+  <tr>
+    <td><%= booking.member.pretty_name %></td>
+    <td></td>
+    <td><%= booking.session.title %></td>
+  </tr>
+  <% end %>
+</table>
