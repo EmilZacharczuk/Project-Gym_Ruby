@@ -32,3 +32,9 @@ post '/members/:id' do
   member.update
   redirect to "/members"
 end
+
+post '/members/:id/delete' do
+  member = Member.find(params['id'].to_i)
+  member.delete
+  redirect to '/members'
+end
