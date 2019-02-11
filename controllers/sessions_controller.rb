@@ -32,3 +32,9 @@ post '/sessions/:id' do
   session.update
   redirect to '/sessions'
 end
+
+post '/sessions/:id/delete' do
+  session = Session.find(params['id'].to_i)
+  session.delete
+  redirect to '/sessions'
+end
