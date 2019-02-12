@@ -1,0 +1,49 @@
+body {
+  background: black url('/images/background-faded.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  color: rgb(229, 97, 16);
+  font-family: serif;
+  font-size: 20px;
+  padding: 0px;
+  margin: 0px;
+}
+
+
+nav {
+  padding: 0px;
+  margin: 20px;
+}
+
+nav ul li {
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+li {
+  padding: 5px;
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+ul {
+  padding: 0px;
+  margin: 0px;
+  list-style-type: none;
+}
+
+main {
+  padding: 25px;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex--row {
+  flex-direction: row;
+}
+
+#content {
+  border-left: 1px solid DarkOrange;
+  padding-left: 25px;
+}

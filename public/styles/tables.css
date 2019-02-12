@@ -1,8 +1,41 @@
 table {
   width: 80%;
+  border: 1px solid #e5c827;
+  border-collapse: collapse;
+  display: table-row-group;
+  vertical-align: middle;
 }
 
 th {
   height: 50px;
-  text-align: left;
+  text-align: center;
+  border: 1px solid #e5c827;
+  padding: 10px 20px 10px 10px;
+}
+
+tr {
+  height:auto;
+  border: 1px solid #e5c827;
+}
+
+td {
+  height:auto;
+  border: 1px solid #e5c827;
+  display: table-cell;
+  padding-left: 10px;
+}
+a:active {
+    background-color: brown;
+}
+
+a:link {
+    color: rgb(80, 80, 80);
+}
+
+a:visited {
+    color: rgb(80, 80, 80);
+}
+
+a:hover {
+    color: DarkOrange;
 }
