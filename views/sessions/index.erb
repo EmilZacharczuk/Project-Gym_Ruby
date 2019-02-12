@@ -3,29 +3,19 @@
 <table>
   <tr>
     <th>Title</th>
-    <th>|<th>
     <th>Instructor</th>
-    <th>|</th>
     <th>Day</th>
-    <th>|</th>
     <th>Start Time</th>
-    <th>|</th>
     <th>Edit</th>
-    <th>|</th>
     <th>Remove</th>
   </tr>
   <% for session in @sessions %>
   <tr>
     <td><a href="sessions/<%= session.id %>"><%=session.title%></a></td>
-    <td></td>
     <td><%= session.instructor %></td>
-    <td></td>
     <td><%= session.day %></td>
-    <td></td>
     <td><%= session.start_time %></td>
-    <td></td>
     <td><a href="sessions/<%= session.id %>/edit">Edit</a></td>
-    <td></td>
     <td><form action="/sessions/<%= session.id %>/delete" method="POST"><input type="submit" value="Delete"></form></td>
   </tr>
   <% end %>

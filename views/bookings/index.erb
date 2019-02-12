@@ -3,17 +3,13 @@
 <table>
   <tr>
     <th>Member</th>
-    <th>|<th>
     <th>Class</th>
-    <th></th>
     <th>Remove</th>
   </tr>
   <% for booking in @bookings %>
   <tr>
     <td><%= booking.member.pretty_name %></td>
-    <td></td>
     <td><%= booking.session.title %></td>
-    <td></td>
     <td><form action="/bookings/<%= booking.id %>/delete" method="POST"><input type="submit" value="Delete"></form></td>
   </tr>
   <% end %>

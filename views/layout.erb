@@ -3,16 +3,19 @@
   <head>
     <meta charset="utf-8">
     <title>Daddy Belly Buster Gym</title>
+      <link rel="stylesheet" type="text.css" href="/styles/forms.css" />
+      <link rel="stylesheet" type="text.css"href="/styles/structure.css" />
+      <link rel="stylesheet" type="text/css"href="/styles/tables.css"  />
   </head>
   <body>
-    <main>
-      <nav id="menu">
-        <li class="menu-item"><a href='/'>Home</a></li>
-        <li class="menu-item"><a href='/members'>Members</a></li>
-        <li class="menu-item"><a href='/sessions'>Classes</a></li>
-        <li class="menu-item"><a href='/bookings'>Bookings</a></li>
+    <main class ="flex flex--row">
+      <nav>
+        <li><a href='/'>Home</a></li>
+        <li><a href='/members'>Members</a></li>
+        <li><a href='/sessions'>Classes</a></li>
+        <li><a href='/bookings'>Bookings</a></li>
       </nav>
-      <section>
+      <section id ="content">
         <%= yield %>
       </section>
     </main>
