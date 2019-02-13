@@ -50,7 +50,7 @@ class Session
   def spare_capacity()
     return @capacity -= self.members.length
   end
-
+  
   def self.delete_all()
     sql = 'DELETE FROM sessions'
     values = []

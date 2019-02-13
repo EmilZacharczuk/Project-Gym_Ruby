@@ -118,7 +118,7 @@ session_2 = Session.new(
      "instructor" => "Jack Henderson",
      "day" => "Tuesday",
      "start_time" => "06:30",
-     "capacity" => 5
+     "capacity" => 3
      })
 
 session_2.save()
