@@ -4,7 +4,7 @@ require_relative('member')
 
 class Session
 
-  attr_accessor :title, :instructor, :day, :start_time
+  attr_accessor :title, :instructor, :day, :start_time, :capacity
   attr_reader :id
 
   def initialize(options)
@@ -13,6 +13,7 @@ class Session
     @instructor = options['instructor']
     @day = options['day']
     @start_time = options['start_time']
+    @capacity = options['capacity'].to_i
   end
 
   def save()
@@ -25,7 +26,7 @@ class Session
 
   def update()
     sql = 'UPDATE sessions SET (title, instructor, day, start_time)
-    = ($1, $2, $3, $4) WHERE id = $5'
+    = ($1, $2, $3, $4) WHERE id = $6'
     values = [@title, @instructor, @day, @start_time, @id]
     SqlRunner.run(sql, values)
   end
@@ -45,7 +46,9 @@ class Session
     result = SqlRunner.run(sql, values)
     return result.map{|member| Member.new(member)}
   end
-
+  def spare_capacity
+    return @capacity -= self.members.length
+  end
   def self.delete_all()
     sql = 'DELETE FROM sessions'
     values = []
