@@ -15,7 +15,7 @@ CREATE TABLE sessions (
   instructor VARCHAR(225),
   day VARCHAR(225),
   start_time VARCHAR(225),
-  spare_capacity INT8
+  capacity INT8
 );
 
 CREATE TABLE bookings (
