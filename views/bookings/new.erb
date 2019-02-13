@@ -14,8 +14,11 @@
     <label for="session_select">Select Class:</label>
       <select name="session_id" id="session_select">
         <% @sessions.each do |session| %>
+        <% if session.spare_capacity > 0 %>
           <option value="<%= session.id %>"><%= session.title %></option>
+        <% else %>
           <% end %>
+        <% end %>
       </select>
   </div>
   <div>

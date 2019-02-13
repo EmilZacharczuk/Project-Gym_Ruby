@@ -4,6 +4,10 @@
 
 <ul>
   <% @member.sessions.each do |session| %>
-    <li> <%=session.title%> </li>
+    <li>Title: <%=session.title%> </li>
+    <li>Instructor: <%=session.instructor%> </li>
+    <li>Day: <%=session.day%> </li>
+    <li>Start time: <%=session.start_time%> </li>
+    <br>
   <% end %>
 </ul>
