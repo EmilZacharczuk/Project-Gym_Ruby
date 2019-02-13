@@ -6,6 +6,7 @@
     <th>Instructor</th>
     <th>Day</th>
     <th>Start Time</th>
+    <th>Spare Capacity</th>
     <th>Edit</th>
     <th>Remove</th>
   </tr>
@@ -15,6 +16,7 @@
     <td><%= session.instructor %></td>
     <td><%= session.day %></td>
     <td><%= session.start_time %></td>
+    <td><%= session.spare_capacity %></td>
     <td><a href="sessions/<%= session.id %>/edit">Edit</a></td>
     <td><form action="/sessions/<%= session.id %>/delete" method="POST"><input type="submit" value="Delete"></form></td>
   </tr>

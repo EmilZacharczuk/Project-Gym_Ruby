@@ -17,17 +17,17 @@ class Session
   end
 
   def save()
-    sql = 'INSERT INTO sessions (title, instructor, day, start_time)
-    VALUES ($1, $2, $3, $4) RETURNING id'
-    values = [@title, @instructor, @day, @start_time]
+    sql = 'INSERT INTO sessions (title, instructor, day, start_time, capacity)
+    VALUES ($1, $2, $3, $4, $5) RETURNING id'
+    values = [@title, @instructor, @day, @start_time, @capacity]
     result = SqlRunner.run(sql, values)
     @id = result.first()['id'].to_i
   end
 
   def update()
-    sql = 'UPDATE sessions SET (title, instructor, day, start_time)
-    = ($1, $2, $3, $4) WHERE id = $6'
-    values = [@title, @instructor, @day, @start_time, @id]
+    sql = 'UPDATE sessions SET (title, instructor, day, start_time, capacity)
+    = ($1, $2, $3, $4, $5) WHERE id = $6'
+    values = [@title, @instructor, @day, @start_time, @capacity, @id]
     SqlRunner.run(sql, values)
   end
 
@@ -46,9 +46,11 @@ class Session
     result = SqlRunner.run(sql, values)
     return result.map{|member| Member.new(member)}
   end
+
   def spare_capacity
     return @capacity -= self.members.length
   end
+
   def self.delete_all()
     sql = 'DELETE FROM sessions'
     values = []
