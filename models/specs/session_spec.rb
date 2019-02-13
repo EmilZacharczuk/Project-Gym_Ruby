@@ -8,7 +8,8 @@ class TestSession < Minitest::Test
               "title" => "Yoga",
               "instructor" => "James Dean",
               "day" => "Monday",
-              "start_time" => "15:20"}
+              "start_time" => "15:20",
+              "capacity" => 10}
 
     @session = Session.new(options)
   end
@@ -32,5 +33,9 @@ class TestSession < Minitest::Test
 
   def test__start_time()
     assert_equal("15:20", @session.start_time)
+  end
+
+  def test_capacity()
+    assert_equal(10, @session.capacity)
   end
 end
