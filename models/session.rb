@@ -47,7 +47,7 @@ class Session
     return result.map{|member| Member.new(member)}
   end
 
-  def spare_capacity
+  def spare_capacity()
     return @capacity -= self.members.length
   end
 
