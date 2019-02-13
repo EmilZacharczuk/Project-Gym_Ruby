@@ -47,6 +47,62 @@ member_5 = Member.new(
 
 member_5.save()
 
+member_6 = Member.new(
+    {"first_name" => "Frank",
+     "second_name" => "Lampart",
+     "address" => "176 George Street EH1 6FT Edinburgh"
+      })
+
+member_6.save()
+
+member_7 = Member.new(
+    {"first_name" => "George",
+     "second_name" => "Ruskin",
+     "address" => "678 Rose Street EH12 5PO Edinburgh"
+      })
+
+member_7.save()
+
+member_8 = Member.new(
+    {"first_name" => "Piotr",
+     "second_name" => "Burzynski",
+     "address" => "2/1 Gorgie Road EH15 1EG Edinburgh"
+      })
+
+member_8.save()
+
+member_9 = Member.new(
+    {"first_name" => "Steven",
+     "second_name" => "Gerard",
+     "address" => "1 Fontainbridge Park EH3 5PO Edinburgh"
+      })
+
+member_9.save()
+
+member_10 = Member.new(
+    {"first_name" => "Michael",
+     "second_name" => "Owen",
+     "address" => "63 Leith Walk EH12 8TR Edinburgh"
+      })
+
+member_10.save()
+
+member_11 = Member.new(
+    {"first_name" => "Liu",
+     "second_name" => "Xiang",
+     "address" => "5 Frederick Street EH1 1TO Edinburgh"
+      })
+
+member_11.save()
+
+member_12 = Member.new(
+    {"first_name" => "Chris",
+     "second_name" => "Melrose",
+     "address" => "1 House Terrace EH23 5GT Mayfield"
+      })
+
+member_12.save()
+
 session_1 = Session.new(
     {"title" => 'Yoga',
      "instructor" => "Jerry Maison",
@@ -101,6 +157,52 @@ session_6 = Session.new(
 
 session_6.save()
 
+session_7 = Session.new(
+    {"title" => 'Body Attack',
+     "instructor" => "Nancy Club",
+     "day" => "Monday",
+     "start_time" => "20:30"
+     })
+
+session_7.save()
+
+session_8 = Session.new(
+    {"title" => 'Pilates',
+     "instructor" => "Marry Kerry",
+     "day" => "Tuesday",
+     "start_time" => "21:00"
+     })
+
+session_8.save()
+
+session_9 = Session.new(
+    {"title" => 'Cysle Spin',
+     "instructor" => "Marry Erwin",
+     "day" => "Wednesday",
+     "start_time" => "19:45"
+     })
+
+session_9.save()
+
+session_10 = Session.new(
+    {"title" => 'Pole Fitness',
+     "instructor" => "Katy Melua",
+     "day" => "Thursday",
+     "start_time" => "18:30"
+     })
+
+session_10.save()
+
+session_11 = Session.new(
+    {"title" => 'Street Dance',
+     "instructor" => "John Martins",
+     "day" => "Friday",
+     "start_time" => "20:15"
+     })
+
+session_11.save()
+
+
 booking_1 = Booking.new(
     {"member_id" => member_1.id,
      "session_id" => session_1.id
@@ -141,6 +243,49 @@ booking_6 = Booking.new(
    })
 
 booking_6.save()
+
+booking_7 = Booking.new(
+    {"member_id" => member_6.id,
+     "session_id" => session_6.id
+   })
+
+booking_7.save()
+
+booking_8 = Booking.new(
+    {"member_id" => member_7.id,
+     "session_id" => session_7.id
+   })
+
+booking_8.save()
+
+booking_9 = Booking.new(
+    {"member_id" => member_7.id,
+     "session_id" => session_3.id
+   })
+
+booking_9.save()
+
+booking_10 = Booking.new(
+    {"member_id" => member_7.id,
+     "session_id" => session_10.id
+   })
+
+booking_10.save()
+
+booking_11 = Booking.new(
+    {"member_id" => member_8.id,
+     "session_id" => session_8.id
+   })
+
+booking_11.save()
+
+booking_12 = Booking.new(
+    {"member_id" => member_9.id,
+     "session_id" => session_9.id
+   })
+
+booking_12.save()
+
 
 binding.pry
 nil
