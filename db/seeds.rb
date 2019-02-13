@@ -107,7 +107,8 @@ session_1 = Session.new(
     {"title" => 'Yoga',
      "instructor" => "Jerry Maison",
      "day" => "Monday",
-     "start_time" => "07:00"
+     "start_time" => "07:00",
+     "capacity" => 10
      })
 
 session_1.save()
@@ -116,7 +117,8 @@ session_2 = Session.new(
     {"title" => 'Spin',
      "instructor" => "Jack Henderson",
      "day" => "Tuesday",
-     "start_time" => "06:30"
+     "start_time" => "06:30",
+     "capacity" => 5
      })
 
 session_2.save()
@@ -125,7 +127,8 @@ session_3 = Session.new(
     {"title" => 'Body Pump',
      "instructor" => "Anne McDowell",
      "day" => "Monday",
-     "start_time" => "13:00"
+     "start_time" => "13:00",
+     "capacity" => 10
      })
 
 session_3.save()
@@ -134,7 +137,8 @@ session_4 = Session.new(
     {"title" => 'Kick Boxing',
      "instructor" => "Frank Richards",
      "day" => "Wednesday",
-     "start_time" => "18:30"
+     "start_time" => "18:30",
+     "capacity" => 10
      })
 
 session_4.save()
@@ -143,7 +147,8 @@ session_5 = Session.new(
     {"title" => 'Cardion Street Funk',
      "instructor" => "Joel King",
      "day" => "Thursday",
-     "start_time" => "21:00"
+     "start_time" => "21:00",
+     "capacity" => 10
      })
 
 session_5.save()
@@ -152,7 +157,8 @@ session_6 = Session.new(
     {"title" => 'ABS Turbo',
      "instructor" => "Marry Erwin",
      "day" => "Friday",
-     "start_time" => "07:30"
+     "start_time" => "07:30",
+     "capacity" => 10
      })
 
 session_6.save()
@@ -161,7 +167,8 @@ session_7 = Session.new(
     {"title" => 'Body Attack',
      "instructor" => "Nancy Club",
      "day" => "Monday",
-     "start_time" => "20:30"
+     "start_time" => "20:30",
+     "capacity" => 10
      })
 
 session_7.save()
@@ -170,7 +177,8 @@ session_8 = Session.new(
     {"title" => 'Pilates',
      "instructor" => "Marry Kerry",
      "day" => "Tuesday",
-     "start_time" => "21:00"
+     "start_time" => "21:00",
+     "capacity" => 10
      })
 
 session_8.save()
@@ -179,7 +187,8 @@ session_9 = Session.new(
     {"title" => 'Cysle Spin',
      "instructor" => "Marry Erwin",
      "day" => "Wednesday",
-     "start_time" => "19:45"
+     "start_time" => "19:45",
+     "capacity" => 10
      })
 
 session_9.save()
@@ -188,7 +197,8 @@ session_10 = Session.new(
     {"title" => 'Pole Fitness',
      "instructor" => "Katy Melua",
      "day" => "Thursday",
-     "start_time" => "18:30"
+     "start_time" => "18:30",
+     "capacity" => 10
      })
 
 session_10.save()
@@ -197,7 +207,8 @@ session_11 = Session.new(
     {"title" => 'Street Dance',
      "instructor" => "John Martins",
      "day" => "Friday",
-     "start_time" => "20:15"
+     "start_time" => "20:15",
+     "capacity" => 10
      })
 
 session_11.save()
