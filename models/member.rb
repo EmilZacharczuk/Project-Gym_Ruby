@@ -48,6 +48,8 @@ class Member
     return result.map {|session| Session.new(session)}
   end
 
+  def name_of_sessions  
+  end
   def self.delete_all()
     sql = 'DELETE FROM members'
     values = []
