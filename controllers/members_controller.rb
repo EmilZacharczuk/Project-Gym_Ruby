@@ -34,7 +34,6 @@ post '/members/:id' do
 end
 
 post '/members/:id/delete' do
-  member = Member.find(params['id'].to_i)
-  member.delete
+  Member.delete(params[:id])
   redirect to '/members'
 end

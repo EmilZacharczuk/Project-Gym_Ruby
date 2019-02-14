@@ -34,7 +34,6 @@ post '/sessions/:id' do
 end
 
 post '/sessions/:id/delete' do
-  session = Session.find(params['id'].to_i)
-  session.delete
+  Session.delete(params[:id])
   redirect to '/sessions'
 end
