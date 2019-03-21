@@ -1,4 +1,4 @@
-GYM
+# Gym App
 
 GYM App is a Ruby application with an Sinatra and PostgreSQL object-relational database.
 
@@ -14,7 +14,7 @@ Installing
 
 Install PostrgresSQL and PG Ruby gem.
 
-# terminal
+# Terminal
 
 Create database:
 
@@ -25,6 +25,6 @@ Seed the database:
 psql -d gym -f gym.sql
 
 
-Using
+# Using
 
 The application is running on port 4567 so visit http://localhost:4567.
