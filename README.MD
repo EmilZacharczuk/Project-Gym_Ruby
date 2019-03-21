@@ -2,6 +2,8 @@ GYM
 
 GYM App is a Ruby application with an Sinatra and PostgreSQL object-relational database.
 
+The app allows user, the manager or member of staff, to add/remove members/classes and update their details. It also allows to book a class for a member changing the capacity and not allowing to overbook for a full class.
+
 It is the first individual project completed after 4 weeks of CodecClan course.
 
 Getting Started
